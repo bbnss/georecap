@@ -2,6 +2,37 @@
 layout: default
 ---
 
+<style>
+    body {
+        background-color: #000000;  /* Sfondo nero */
+        color: #ffffff;              /* Testo bianco */
+    }
+    header {
+        background: #333333;        /* Colore di sfondo per l'intestazione */
+    }
+    a {
+        color: #58a6ff;             /* Colore dei link */
+    }
+    .news-item {
+        background: #222222;        /* Colore di sfondo per gli articoli */
+        border-bottom: 1px solid #ccc;
+    }
+    .source {
+        color: #999999;             /* Colore del testo per la fonte */
+    }
+    #date-selector-container {
+        margin-bottom: 20px;
+    }
+    #main-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .footer-disclaimer, .footer-credit {
+        color: #ffffff;
+    }
+</style>
+
 <div id="main-content">
     
     <div id="date-selector-container">
@@ -113,23 +144,3 @@ layout: default
     // Carica i post iniziali
     loadPosts();
 </script>
-
-<style>
-    #main-content {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-    }
-    .news-item {
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid #ccc;
-    }
-    .source {
-        font-size: 0.8em;
-        color: #666;
-    }
-    #date-selector-container {
-        margin-bottom: 20px;
-    }
-</style>
